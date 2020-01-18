@@ -22,6 +22,7 @@ plt.xlabel(eixox)
 plt.ylabel(eixoy)
 
 # Plotando os gráficos e usando a bif legend()
+# legend() -- Exibe as labels
 plt.bar(x1, y1, label = "Gp 1")   
 plt.bar(x2, y2, label = "Gp 2")
 plt.legend()
