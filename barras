@@ -1,0 +1,29 @@
+import matplotlib.pyplot as plt
+
+""" Comparação de dos gráficos
+Gráfico do grupo 01 e grupo 02 """
+
+# Grupo 01
+x1 = [1, 3, 5, 7, 9]
+y1 = [2, 3, 7, 6, 10]
+
+# Grupo 02
+x2 = [2, 4, 6, 8, 10]
+y2 = [5, 3, 7, 6, 10]
+
+# Legendas -- Eixos e Título
+titulo = "Gráfico Barras 2 "
+eixox = ("Eixo X")
+eixoy = ("Eixo Y")
+
+# Legendas -- Exibindo-as
+plt.title(titulo)
+plt.xlabel(eixox)
+plt.ylabel(eixoy)
+
+# Plotando os gráficos e usando a bif legend()
+plt.bar(x1, y1, label = "Gp 1")   
+plt.bar(x2, y2, label = "Gp 2")
+plt.legend()
+
+plt.show()
