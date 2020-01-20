@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+
+conteudo_grafico = [20, 20, 20, 20, 20]
+conteudo_grafico_legenda = ["A", "B", "C", "D", "E"]
+
+separacao_grafico = [0, 0, 0, 0.1, 0.1]
+
+plt.pie(conteudo_grafico, labels = conteudo_grafico_legenda, autopct = "%.2f %%", explode = separacao_grafico)
+plt.axis("equal")
+
+plt.show()
